@@ -1,11 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Metadatos -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="author" content="Edgar Gomez" />
+    <meta name="description" content="Portfolio backend Edgar Gomez" />
+    <meta
+      name="keywords"
+      content="portfolio, curriculum, projects, programmer, backend, csharp, programming"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/icon.png" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!-- Titulo -->
+    <title>Portfolio | Edgar Gomez</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-terminal"></i>
+          Edgar Gomez
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                About me
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero me -->
+    <section class="hero section-clear">
+      <div class="container d-flex flex-column justify-content-center align-items-center">
+        <img src="/img/programmer2.svg" width="200" height="200" alt="Foto personal">
+        <h1>Edgar Gomez</h1>
+        <h4>Backend Programmer</h4>
+        <div class="container-fluid container-img-tech">
+          <img class="img-tech" width="100" height="100" src="img/c--4.svg"/>
+          <img class="img-tech" width="100" height="100" src="img/dot-net-core-7.svg"/>
+          <img class="img-tech" width="100" height="100" src="img/blazor.svg"/>
+          <img class="img-tech" width="100" height="100" src="img/api-svgrepo-com.svg"/>
+          <img class="img-tech" width="100" height="100" src="img/bootstrap-5-1.svg"/>
+          <img class="img-tech" width="100" height="100" src="img/microsoft-sql-server-1.svg"/>
+          <img class="img-tech" width="100" height="100" src="img/git-icon.svg"/>
+        </div>
+      </div>
+    </section>
+    <!-- About Me -->
+    <section class="section-dark">
+      <div class="container-fluid about-me d-flex flex-column align-items-center justify-content-center">
+        <h1>About me</h1>
+        <p class="text-center">Greetings visitor, I am a self-taught backend programmer focused on the .NET framework, I specialize in creating Rest APIs, creating websites using Blazor in conjunction with Bootstrap, I have solid foundations in clean code, SOLID principles, design patterns, data and algorithms, I have performed API services following the hexagonal clean architecture encapsulating the business logic, I have been programming solutions for the business environment for more than 5 years. Apart from that, I have a university degree as an electronic engineer, I have designed analog and digital circuits programming microships at a low level with languages ​​such as c or assembly, I have many skills but you should know that where I stand out the most is in the backend using c# that is my target .</p>
+      </div>
+    </section>
+    <!-- Recent Projects -->
+    <section class="section-clear">
+      <div class="container text-center">
+        <h1>Recent Projects</h1>
+        <div class="container text-center proyectos-contenedor">
+          <div class="row">
+            
+            <!-- Proyecto 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="project">
+                  <div class="front-project">
+                    <h1>API Music For Stores</h1>
+                  </div>  
+                    <div class="overlay d-flex flex-column justify-content-center align-items-center">
+                      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                          <i class="bi bi-github"></i>
+                          <p>Github Code</p>
+                      </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="project">
+                  <div class="front-project">
+                    <h1>API Music For Stores</h1>
+                  </div>  
+                    <div class="overlay d-flex flex-column justify-content-center align-items-center">
+                      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                          <i class="bi bi-github"></i>
+                          <p>Github Code</p>
+                      </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="project">
+                <div class="front-project">
+                  <h1>API Music For Stores</h1>
+                </div>  
+                  <div class="overlay d-flex flex-column justify-content-center align-items-center">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                        <p>Github Code</p>
+                    </a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="project">
+              <div class="front-project">
+                <h1>API Music For Stores</h1>
+              </div>  
+                <div class="overlay d-flex flex-column justify-content-center align-items-center">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-github"></i>
+                      <p>Github Code</p>
+                  </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proyecto 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="project">
+            <div class="front-project">
+              <h1>API Music For Stores</h1>
+            </div>  
+              <div class="overlay d-flex flex-column justify-content-center align-items-center">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                    <p>Github Code</p>
+                </a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Proyecto 6 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project">
+          <div class="front-project">
+            <h1>API Music For Stores</h1>
+          </div>  
+            <div class="overlay d-flex flex-column justify-content-center align-items-center">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                  <p>Github Code</p>
+              </a>
+            </div>
+        </div>
+    </div>
+
+          </div>
+        </div>
+        <a href="https://github.com/aurquiel?tab=repositories" target="_blank" rel="noopener noreferrer">
+          <button class="btn btn-primary">
+            More projects at Github...
+          </button>
+        </a>
+      </div>
+    </section>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
 </html>

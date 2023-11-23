@@ -1,0 +1,172 @@
+.navbar {
+  padding: 1.2rem;
+  background-color: #04478a;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a {
+  font-size: 1.2rem;
+  color: white;
+  font-family: 'Roboto', monospace;
+}
+
+/* General */
+
+.section-clear {
+  width: 100%;
+  background-color: white;
+}
+
+.section-dark {
+  width: 100%;
+  background-color: #04478a;
+  color: white;
+}
+
+/* Hero Me */
+.hero {
+  width: 100%;
+  height: 500px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.img-tech {
+  margin: 5px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: rgb(52, 45, 45);
+  font-family: 'Roboto', monospace;
+}
+
+.hero h4 {
+  font-size: 20px;
+  color: rgb(52, 45, 45);
+  font-family: 'Roboto', monospace;
+}
+
+.container-img-tech {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+/* About Me */
+.about-me {
+  max-width: 700px;
+  height: 500px;
+}
+
+.about-me h1 {
+  font-size: 40px;
+  color: white;
+  font-family: 'Roboto', monospace;
+}
+
+.about-me p {
+  font-size: 18px;
+  color: white;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* Projects */
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.front-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(57, 35, 131);
+  border-radius: 15px;
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+}
+
+.front-project h1 {
+  font-size: 40px;
+  color: white;
+  padding: 30px;
+  font-family: 'Roboto', monospace;
+}
+
+.overlay {
+  border: 3px solid rgb(52, 45, 45);
+  border-radius: 15px;
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  height: 200px;
+  width: 300px;
+}
+
+.overlay p {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(52, 45, 45);
+}
+
+.project {
+  position: relative;
+}
+
+.project:hover .front-project{
+  opacity: 0;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.project:hover h1 {
+  opacity: 0;
+}
+
+.overlay a {
+  color: rgb(52, 45, 45);
+  font-size: 60px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 650px) {
+  .container-img-tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero{
+    height: 1140px;
+  }
+  .about-me {
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-me {
+    height: 850px;
+  }
+}
