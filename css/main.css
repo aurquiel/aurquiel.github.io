@@ -79,6 +79,17 @@
 
 /* Projects */
 
+.recent-porjects {
+  padding: 40px;
+}
+
+.recent-porjects h1 {
+  font-size: 40px;
+  color: rgb(52, 45, 45);
+  font-family: 'Roboto', monospace;
+  margin-bottom: 40px;
+}
+
 .project {
   display: flex;
   flex-direction: column;
@@ -147,6 +158,176 @@
   font-family: 'Share Tech Mono', monospace;
 }
 
+/* Testimonios */
+
+.testimonies {
+  padding: 40px 40px 60px 40px;
+}
+
+.testimonies .carousel {
+  max-width: 800px;
+}
+
+.testimonies h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+.testimonies .image-testimonies {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonies-text {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.testimonies-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonies-info p {
+  margin-bottom: 0;
+}
+
+.testimonies-info .client {
+  font-size: 1.2rem;
+}
+
+.testimonies-info .charge {
+  font-size: 0.9rem;
+  color: #dbdbdb;
+}
+
+/* Contacto */
+
+.contact .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contact .rectangule {
+  margin-top: -5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px #04478a;
+}
+
+.contact .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contact .title {
+  color: rgb(52, 45, 45);
+  font-size: 20px;
+  font-family: 'Roboto', monospace;
+}
+
+.contact .description {
+  color: rgb(52, 45, 45);
+  font-size: 18px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.contact button {
+  color: rgb(52, 45, 45);
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid rgb(52, 45, 45);
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact button:hover {
+  background-color: #6cabfc;
+  color: white;
+}
+
+.contact button i {
+  color: rgb(52, 45, 45);
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact button:hover i {
+  color: white;
+}
+
+/* Pie de Pagina (footer) */
+
+footer {
+  min-height: 500px;
+}
+
+footer i{
+  font-size: 40px;
+  color: #04478a;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.icons-social a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid  rgb(57, 35, 131);
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.icons-social i {
+  color: black;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.icons-social a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.icons-social a:hover i {
+  color: black;
+}
+
+.copyrigth {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
 
 /* Media Query */
 
@@ -168,5 +349,15 @@
 @media screen and (max-width: 420px) {
   .about-me {
     height: 850px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .carousel-item {
+    height: 600px;
+  }
+
+  .testimonies-text {
+    font-size: 18px;
   }
 }

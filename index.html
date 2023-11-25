@@ -36,7 +36,7 @@
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#hero">
           <i class="bi bi-terminal"></i>
           Edgar Gomez
         </a>
@@ -54,25 +54,31 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#about-me">
                 About me
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#">
+                Projects
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonies</a>
+              <a class="nav-link" href="#">
+                Testimonies
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact me</a>
+              <a class="nav-link" href="#">
+                Contact me
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Hero me -->
-    <section class="hero section-clear">
+    <section id="hero" class="hero section-clear">
       <div class="container d-flex flex-column justify-content-center align-items-center">
         <img src="/img/programmer2.svg" width="200" height="200" alt="Foto personal">
         <h1>Edgar Gomez</h1>
@@ -89,14 +95,14 @@
       </div>
     </section>
     <!-- About Me -->
-    <section class="section-dark">
+    <section id="about-me" class="section-dark">
       <div class="container-fluid about-me d-flex flex-column align-items-center justify-content-center">
         <h1>About me</h1>
         <p class="text-center">Greetings visitor, I am a self-taught backend programmer focused on the .NET framework, I specialize in creating Rest APIs, creating websites using Blazor in conjunction with Bootstrap, I have solid foundations in clean code, SOLID principles, design patterns, data and algorithms, I have performed API services following the hexagonal clean architecture encapsulating the business logic, I have been programming solutions for the business environment for more than 5 years. Apart from that, I have a university degree as an electronic engineer, I have designed analog and digital circuits programming microships at a low level with languages ​​such as c or assembly, I have many skills but you should know that where I stand out the most is in the backend using c# that is my target .</p>
       </div>
     </section>
     <!-- Recent Projects -->
-    <section class="section-clear">
+    <section class="recent-porjects section-clear">
       <div class="container text-center">
         <h1>Recent Projects</h1>
         <div class="container text-center proyectos-contenedor">
@@ -111,7 +117,7 @@
                     <div class="overlay d-flex flex-column justify-content-center align-items-center">
                       <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
                           <i class="bi bi-github"></i>
-                          <p>Github Code</p>
+                          <p>Github Repository</p>
                       </a>
                     </div>
                 </div>
@@ -126,7 +132,7 @@
                     <div class="overlay d-flex flex-column justify-content-center align-items-center">
                       <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
                           <i class="bi bi-github"></i>
-                          <p>Github Code</p>
+                          <p>Github Repository</p>
                       </a>
                     </div>
                 </div>
@@ -141,7 +147,7 @@
                   <div class="overlay d-flex flex-column justify-content-center align-items-center">
                     <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-github"></i>
-                        <p>Github Code</p>
+                        <p>Github Repository</p>
                     </a>
                   </div>
               </div>
@@ -156,7 +162,7 @@
                 <div class="overlay d-flex flex-column justify-content-center align-items-center">
                   <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
                       <i class="bi bi-github"></i>
-                      <p>Github Code</p>
+                      <p>Github Repository</p>
                   </a>
                 </div>
             </div>
@@ -171,7 +177,7 @@
               <div class="overlay d-flex flex-column justify-content-center align-items-center">
                 <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-github"></i>
-                    <p>Github Code</p>
+                    <p>Github Repository</p>
                 </a>
               </div>
           </div>
@@ -186,7 +192,7 @@
             <div class="overlay d-flex flex-column justify-content-center align-items-center">
               <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
                   <i class="bi bi-github"></i>
-                  <p>Github Code</p>
+                  <p>Github Repository</p>
               </a>
             </div>
         </div>
@@ -196,11 +202,91 @@
         </div>
         <a href="https://github.com/aurquiel?tab=repositories" target="_blank" rel="noopener noreferrer">
           <button class="btn btn-primary">
-            More projects at Github...
+            More projects at Github
+            <i class="bi bi-arrow-right-circle-fill"></i>
           </button>
         </a>
       </div>
     </section>
+
+    <!-- Testimonios -->
+    <section class="testimonies section-dark">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <h1>Testimonies</h1>
+  
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container d-flex flex-column justify-content-center align-items-center">
+                  <img class="image-testimonies" src="/img/testimonies/aponte.jpg" alt="Software Coordinator">
+                  <p class="testimonies-text">Programmer with a high level of knowledge, self-taught, efficient, good approach to problem solving and logical analysis.</p>
+                  <div class="testimonies-info">
+                    <p class="client">Aponte</p>
+                    <p class="charge">Development Coordinator The Factory HKA</p>
+                </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+      </div>
+    </section>
+    
+    <!-- Contacto -->
+    <section class="contact section-clear">
+      <div class="container">
+          <div class="container text-center rectangule d-flex justify-content-evenly">
+              <div class="row">
+                  <div class="col-12 col-md-4 title">
+                     MAIL ME
+                  </div>
+                  <div class="col-12 col-md-4 description">
+                    I am open to listening to professional proposals
+                  </div>
+                  <div class="col-12 col-md-4">
+                      <a href="mailto:edgargomez.ucv@gmail.com">
+                          <button type="button">
+                              Contact
+                              <i class="bi bi-envelope-check-fill"></i>
+                          </button>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Pie de pagina (footer) -->
+  <footer class="footer section-clear d-flex flex-column align-items-center justify-content-center">
+    <i class="bi bi-terminal"></i>
+    <p class="footer-text text-center">
+      I learn and create every day.<br>Let's create projects together
+    </p>
+    <div class="icons-social d-flex flex-wrap align-items-center justify-content-center">
+          <a href="https://github.com/aurquiel?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/edgar-g%C3%B3mez-rodr%C3%ADguez-b62476115/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/aurquiel/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="mailto:edgargomez.ucv@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-envelope"></i>
+          </a>
+    </div>
+    <div class="copyrigth">Cretaed by Edgar Gomez (2023) &#169;</div>
+</footer>
+
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
