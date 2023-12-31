@@ -158,6 +158,23 @@
   font-family: 'Share Tech Mono', monospace;
 }
 
+.technology-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 290px;
+  align-items: center;
+}
+
+.technology-container p{
+  padding: 4px;
+  margin: 2px;
+  background-color: #5865d9;
+  text-align: center;
+  color: white;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
 /* Testimonios */
 
 .testimonies {
