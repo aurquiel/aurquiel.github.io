@@ -37,6 +37,8 @@
 
 .img-tech {
   margin: 5px;
+  width: 100px;
+  height: 100px;
 }
 
 .hero h1 {
@@ -364,18 +366,16 @@ footer i{
 
 /* Media Query */
 
-@media screen and (max-width: 650px) {
-  .container-img-tech {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@media screen and (max-width: 760px) {
+  .img-tech {
+    width: 40px;
+    height: 40px;
   }
   .hero{
-    height: 1140px;
+    height: 350px;
   }
   .about-me {
-    height: 650px;
+    height: 500px;
   }
 }
 
