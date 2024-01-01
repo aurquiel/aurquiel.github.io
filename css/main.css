@@ -1,0 +1,485 @@
+.navbar {
+  padding: 1.2rem;
+  background-color: #04478a;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a {
+  font-size: 1.2rem;
+  color: white;
+  font-family: 'Roboto', monospace;
+}
+
+/* General */
+
+.section-clear {
+  width: 100%;
+  background-color: white;
+}
+
+.section-dark {
+  width: 100%;
+  background-color: #04478a;
+  color: white;
+}
+
+/* Hero Me */
+.hero {
+  width: 100%;
+  height: 500px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.img-tech {
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: rgb(52, 45, 45);
+  font-family: 'Roboto', monospace;
+}
+
+.hero h4 {
+  font-size: 20px;
+  color: rgb(52, 45, 45);
+  font-family: 'Roboto', monospace;
+}
+
+.container-img-tech {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+/* About Me */
+.about-me {
+  max-width: 700px;
+  height: 500px;
+}
+
+.about-me h1 {
+  font-size: 40px;
+  color: white;
+  font-family: 'Roboto', monospace;
+}
+
+.about-me p {
+  font-size: 18px;
+  color: white;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* Projects */
+
+.recent-porjects {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.recent-porjects h1 {
+  font-size: 40px;
+  color: #265DF2;
+  font-family: 'Roboto', monospace;
+  text-align: center;
+}
+
+.slider-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: #FFF;
+}
+
+.image-content, .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0px;
+}
+
+.overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #04478a;
+  border-radius: 25px 25px 0px 25px;
+}
+
+.overlay::before,
+.overlay::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  bottom: -40px;
+  height: 40px;
+  width: 42px;
+  background-color: #04478a;
+}
+
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #04478a;
+  padding: 4px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+  height: 100px;
+}
+
+.technology-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.technology-container p{
+  padding: 4px;
+  margin: 2px;
+  background-color: #5865d9;
+  text-align: center;
+  color: white;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+.card-content a{
+  text-decoration: none;
+}
+
+
+.button {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px;
+  background-color: #04478a;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button p {
+  padding: 5px;
+  margin: 5px;
+}
+
+.button i {
+  font-size: 30px;
+}
+
+.button:hover {
+  background: #265DF2;
+}
+
+.swiper-navBtn {
+  color: #6E93F7;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: #04478a;
+}
+
+.swiper-navBtn::before, 
+.swiper-navBtn::after {
+  font-size: 40px;
+}
+
+.swiper-button-next {
+  right: 0px;
+}
+
+.swiper-button-prev {
+  left: 0px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #6E93F7;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #04478a;
+}
+
+/* Testimonios */
+
+.testimonies {
+  padding: 40px 40px 60px 40px;
+}
+
+.testimonies .carousel {
+  max-width: 800px;
+}
+
+.testimonies h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+.testimonies .image-testimonies {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonies-text {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.testimonies-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonies-info p {
+  margin-bottom: 0;
+}
+
+.testimonies-info .client {
+  font-size: 1.2rem;
+}
+
+.testimonies-info .charge {
+  font-size: 0.9rem;
+  color: #dbdbdb;
+}
+
+/* Contacto */
+
+.contact .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contact .rectangule {
+  margin-top: -5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px #04478a;
+}
+
+.contact .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contact .title {
+  color: rgb(52, 45, 45);
+  font-size: 20px;
+  font-family: 'Roboto', monospace;
+}
+
+.contact .description {
+  color: rgb(52, 45, 45);
+  font-size: 18px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.contact button {
+  color: rgb(52, 45, 45);
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid rgb(52, 45, 45);
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact button:hover {
+  background-color: #6cabfc;
+  color: white;
+}
+
+.contact button i {
+  color: rgb(52, 45, 45);
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact button:hover i {
+  color: white;
+}
+
+/* Pie de Pagina (footer) */
+
+footer {
+  min-height: 500px;
+}
+
+footer i{
+  font-size: 40px;
+  color: #04478a;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.icons-social a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid  rgb(57, 35, 131);
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.icons-social i {
+  color: black;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.icons-social a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.icons-social a:hover i {
+  color: black;
+}
+
+.copyrigth {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+/* Scroll to Top */
+
+.scroll-to-top {
+  border: 0px solid transparent;
+  background-color: transparent;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+}
+
+.scroll-to-top i{
+  font-size: 40px;
+  color: #9dbcdb;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 760px) {
+  .img-tech {
+    width: 40px;
+    height: 40px;
+  }
+  .hero{
+    height: 350px;
+  }
+  .about-me {
+    height: 500px;
+  }
+  .slide-content {
+    margin: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-me {
+    height: 850px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .carousel-item {
+    height: 600px;
+  }
+
+  .testimonies-text {
+    font-size: 18px;
+  }
+}
