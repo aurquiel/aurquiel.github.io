@@ -41,12 +41,15 @@ var swiper = new Swiper(".slide-content", {
   breakpoints: {
       0: {
           slidesPerView: 1,
+          slidesPerGroup: 1,
       },
       730: {
           slidesPerView: 2,
+          slidesPerGroup: 2,
       },
       950: {
           slidesPerView: 3,
+          slidesPerGroup: 3,
       },
   },
 });
