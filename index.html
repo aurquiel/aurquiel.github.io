@@ -21,14 +21,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
+    <!-- swiper -->
+    <link rel="stylesheet" href="/css/swipper-bundle.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="img/icon.png" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <!-- Titulo -->
     <title>Portfolio | Edgar Gomez</title>
   </head>
@@ -103,90 +105,56 @@
     </section>
     <!-- Recent Projects -->
     <section id="projects" class="recent-porjects section-clear">
-      <div class="container text-center">
-        <h1>Recent Projects</h1>
-        <div class="container text-center proyectos-contenedor">
-          <div class="row">
-            
-            <!-- Proyecto 1 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="project">
-                  <div class="front-project">
-                    <h1>Blazor App Inventory</h1>
-                  </div>  
-                    <div class="overlay d-flex flex-column justify-content-center align-items-center">
-                      <a href="https://github.com/aurquiel/BlazorAppInventory/tree/InventoryBuyer" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-github"></i>
-                          <p>Github Repository</p>
-                      </a>
-                      <div class="technology-container">
-                        <p>Blazor</p>
-                        <p>C#</p>
-                        <p>Html</p>
-                        <p>Css</p>
-                        <p>SQL</p>
-                        <p>JS</p>
-                        <p>EF</p>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Proyecto 2 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="project">
-                  <div class="front-project">
-                    <h1>API Music For Stores</h1>
-                  </div>  
-                    <div class="overlay d-flex flex-column justify-content-center align-items-center">
-                      <a href="https://github.com/aurquiel/WebApplicatioMusicStore" target="_blank" rel="noopener noreferrer">
-                          <i class="bi bi-github"></i>
-                          <p>Github Repository</p>
-                      </a>
-                      <div class="technology-container">
-                        <p>C#</p>
-                        <p>Swagger</p>
-                        <p>JWT Tokens</p>
-                        <p>SQL</p>
-                        <p>EF</p>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Proyecto 3 -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="project">
-                <div class="front-project">
-                  <h1>API Countability Stores</h1>
-                </div>  
-                  <div class="overlay d-flex flex-column justify-content-center align-items-center">
-                    <a href="https://github.com/aurquiel/WebApplicationTraceRegister/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-github"></i>
-                        <p>Github Repository</p>
-                    </a>
-                    <div class="technology-container">
-                      <p>C#</p>
-                      <p>Swagger</p>
-                      <p>JWT Tokens</p>
-                      <p>SQL</p>
-                      <p>EF</p>
-                    </div>
+      <h1>Projects</h1>
+        <div class="swiper slider-container">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"> </span>
+                  <div class="card-image">
+                    <img src="/img/web.svg" alt="" class="card-img" />
                   </div>
-              </div>
-          </div>
-
-          <!-- Proyecto 4 -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="project">
-              <div class="front-project">
-                <h1>API Manage Remote Task</h1>
-              </div>  
-                <div class="overlay d-flex flex-column justify-content-center align-items-center">
-                  <a href="https://github.com/aurquiel/WebApplicationStoreAuto" target="_blank" rel="noopener noreferrer">
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Website Inventory</h2>
+                  <p class="description">
+                    Web site to track orders in-out, manage stock and resume orders to pdf. Management of user and user roles.s
+                  </p>
+    
+                  <div class="technology-container">
+                    <p>Blazor</p>
+                    <p>APi Rest</p>
+                    <p>C#</p>
+                    <p>Html</p>
+                    <p>Css</p>
+                    <p>SQL</p>
+                    <p>JS</p>
+                    <p>EF</p>
+                  </div>
+    
+                  <a href="https://github.com/aurquiel/BlazorAppInventory/tree/InventoryBuyer" target="_blank" rel="noopener noreferrer">
+                    <button class="button">
                       <i class="bi bi-github"></i>
                       <p>Github Repository</p>
+                    </button>
                   </a>
+                </div>
+              </div>
+    
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"> </span>
+                  <div class="card-image">
+                    <img src="/img/api.svg" alt="" class="card-img" />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">API Rest Music</h2>
+                  <p class="description">
+                    Api Rest to store, download mp3 files, create playlist and reproduce a file in a specifyc time. This API powers a desktop application on the client and administration application.
+                  </p>
+    
                   <div class="technology-container">
                     <p>C#</p>
                     <p>Swagger</p>
@@ -194,63 +162,144 @@
                     <p>SQL</p>
                     <p>EF</p>
                   </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Proyecto 5 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="project">
-            <div class="front-project">
-              <h1>Wpf Remote Task</h1>
-            </div>  
-              <div class="overlay d-flex flex-column justify-content-center align-items-center">
-                <a href="https://github.com/aurquiel/WpfApplicationStoreAuto" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-github"></i>
-                    <p>Github Repository</p>
-                </a>
-                <div class="technology-container">
-                  <p>WPF</p>
-                  <p>C#</p>
-                  <p>Htpp Client</p>
-                  <p>SQL</p>
-                  <p>EF</p>
+    
+                  <a href="https://github.com/aurquiel/WebApplicatioMusicStore" target="_blank" rel="noopener noreferrer">
+                    <button class="button">
+                      <i class="bi bi-github"></i>
+                      <p>Github Repository</p>
+                    </button>
+                  </a>					
                 </div>
               </div>
-          </div>
-      </div>
-
-      <!-- Proyecto 6 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="project">
-          <div class="front-project">
-            <h1>App Music For stores</h1>
-          </div>  
-            <div class="overlay d-flex flex-column justify-content-center align-items-center">
-              <a href="https://github.com/aurquiel/WinFormsAppMusicStoreAdmin" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                  <p>Github Repository</p>
-              </a>
-              <div class="technology-container">
-                <p>WinForms</p>
-                <p>C#</p>
-                <p>Htpp Client</p>
-                <p>SQL</p>
-                <p>EF</p>
+    
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"> </span>
+                  <div class="card-image">
+                    <img src="/img/api.svg" alt="" class="card-img" />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Api Rest Contability</h2>
+                  <p class="description">
+                    API Rest to handle the sales and expenses of diferents stores, managament of users and roles. This API powers a desktop application on the client and administration application.
+                  </p>
+    
+                  <div class="technology-container">
+                    <p>C#</p>
+                    <p>Swagger</p>
+                    <p>JWT Tokens</p>
+                    <p>SQL</p>
+                    <p>EF</p>
+                  </div>
+    
+                  <a href="https://github.com/aurquiel/WebApplicationTraceRegister/" target="_blank" rel="noopener noreferrer">
+                    <button class="button">
+                      <i class="bi bi-github"></i>
+                      <p>Github Repository</p>
+                    </button>
+                  </a>
+                </div>
               </div>
+    
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"> </span>
+                  <div class="card-image">
+                    <img src="/img/api.svg" alt="" class="card-img" />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Api Rest Manage Task</h2>
+                  <p class="description">
+                    Api Rest to aprove, deny and close task in different clients, keep a history of operations. This API powers a desktop application on the client and administration application.
+                  </p>
+    
+                  <div class="technology-container">
+                    <p>C#</p>
+                    <p>Swagger</p>
+                    <p>JWT Tokens</p>
+                    <p>SQL</p>
+                    <p>EF</p>
+                  </div>
+    
+                  <a href="https://github.com/aurquiel/WebApplicationStoreAuto" target="_blank" rel="noopener noreferrer">
+                    <button class="button">
+                      <i class="bi bi-github"></i>
+                      <p>Github Repository</p>
+                    </button>
+                  </a>
+                </div>
+              </div>
+    
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"> </span>
+                  <div class="card-image">
+                    <img src="/img/desktop.svg" alt="" class="card-img" />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Wpf Remote Task</h2>
+                  <p class="description">
+                    Desktop app to request and execute task to an admin control, consuming an API. 
+                  </p>
+    
+                  <div class="technology-container">
+                    <p>WPF</p>
+                    <p>C#</p>
+                    <p>Htpp Client</p>
+                    <p>SQL</p>
+                    <p>EF</p>
+                  </div>
+    
+                  <a href="https://github.com/aurquiel/WpfApplicationStoreAuto" target="_blank" rel="noopener noreferrer">
+                    <button class="button">
+                      <i class="bi bi-github"></i>
+                      <p>Github Repository</p>
+                    </button>
+                  </a>
+                </div>
+              </div>
+    
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"> </span>
+                  <div class="card-image">
+                    <img src="/img/desktop.svg" alt="" class="card-img" />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">App Music</h2>
+                  <p class="description">
+                    Desktop app to downolad and upload mpe3, manage playlist, consuming an API. 
+                  </p>
+    
+                  <div class="technology-container">
+                    <p>WinForms</p>
+                    <p>C#</p>
+                    <p>Htpp Client</p>
+                    <p>SQL</p>
+                    <p>EF</p>
+                  </div>
+    
+                  <a href="https://github.com/aurquiel?tab=repositories" target="_blank" rel="noopener noreferrer">
+                    <button class="button">
+                      <i class="bi bi-github"></i>
+                      <p>Github Repository</p>
+                    </button>
+                  </a>
+                </div>
+              </div>
+    
+    
             </div>
-        </div>
-    </div>
-
           </div>
+    
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <a href="https://github.com/aurquiel?tab=repositories" target="_blank" rel="noopener noreferrer">
-          <button class="btn btn-primary">
-            More projects at Github
-            <i class="bi bi-arrow-right-circle-fill"></i>
-          </button>
-        </a>
-      </div>
     </section>
 
     <!-- Testimonios -->
@@ -337,6 +386,7 @@
 </button> 
 
   </body>
+  <script src="/js/swiper-bundle.min.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
